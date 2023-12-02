@@ -19,7 +19,7 @@ const Toolbar: React.FC = () => {
           <NavLink to="/" className="nav-link">Quotes</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/add" className="nav-link">Add new quotes</NavLink>
+          <NavLink to="/addquotes" className="nav-link">Add new quotes</NavLink>
         </li>
       </ul>
     </nav>

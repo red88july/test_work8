@@ -1,21 +1,22 @@
 import axiosApi from "../../axiosApi.ts";
 import React, {useCallback, useState} from 'react';
-import {Posts} from '../../types';
+import {Quotes} from '../../types';
 import Spinner from "../Spinner/Spinner.tsx";
 import TypeWriter from '../../images/ic-typewriter.png';
 import '../../styles.css';
 
 
 const QuotesAdd: React.FC = () => {
-    const [quotes, setQuotes] = useState<Posts>({
+    const [quotes, setQuotes] = useState<Quotes>({
         id: '',
+        type: '',
         author: '',
         quote: '',
     });
 
     const [loading, setLoading] = useState(false);
 
-    const inputChange = useCallback((event: React.ChangeEvent<HTMLInputElement & HTMLTextAreaElement>) => {
+    const inputChange = useCallback((event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
         const randomId = `${Math.random()}`;
         const {name, value} = event.target;
         setQuotes((prevState) => ({
@@ -27,7 +28,7 @@ const QuotesAdd: React.FC = () => {
 
     const onFormSubmit = async (event: React.FormEvent) => {
         event.preventDefault();
-        setQuotes({id: '', author: '', quote: ''});
+        setQuotes({id: '', type: '', author: '', quote: ''});
         setLoading(true);
 
         const QuotesData = {
@@ -49,6 +50,24 @@ const QuotesAdd: React.FC = () => {
                 </div>
             </div>
             <div className="mb-3">
+              <div className="form-group mb-3">
+                <label htmlFor="type">Choose of category type</label>
+                <select
+                  name="type"
+                  id="type"
+                  className="form-select"
+                  value={quotes.type}
+                  onChange={inputChange}
+                >
+                  <option value="">Choise...</option>
+                  <option value="All">All</option>
+                  <option value="Star Wars">Star Wars</option>
+                  <option value="Famous People">Famous People</option>
+                  <option value="Saying">Saying</option>
+                  <option value="Humor">Humor</option>
+                  <option value="Motivational">Motivational</option>
+                </select>
+              </div>
                 <label htmlFor="title-input" className="form-label">Add your name</label>
                 <input
                     name="author"

@@ -15,9 +15,9 @@ function App() {
           <Route path="/" element={
             <QuotePage />
           }/>
-          <Route path="/quotes" element={
-            <QuotePage />
-          }/>
+          {/*<Route path="/quotes" element={*/}
+          {/*  <QuotePage />*/}
+          {/*}/>*/}
           <Route path="/addquotes" element={
             <AddQuotesPage />
           }/>

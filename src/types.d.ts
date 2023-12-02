@@ -1,6 +1,6 @@
 export interface Quotes {
   id: string,
-  type: string,
+  category: string,
   author: string,
   quote: string,
 }

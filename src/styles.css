@@ -1,0 +1,178 @@
+.container {
+  max-width: 1440px;
+  padding: 0 10px;
+}
+
+.sizing {
+  margin: 180px auto 150px 50px;
+}
+
+.pic-style {
+  background-image: url("../src/uploads/mainPic.jpg");
+  background-size: cover;
+}
+
+.links {
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.links:hover {
+  text-decoration: underline;
+}
+
+.facebook {
+  padding: 20px;
+  background-image: url("../src/images/ic-facebook.png");
+  background-position: left -5px top -5px;
+  background-repeat: no-repeat;
+}
+
+.twitter {
+  padding: 20px;
+  background-image: url("../src/images/ic-twitter.png");
+  background-position: left -5px top -5px;
+  background-repeat: no-repeat;
+}
+
+.linkedin {
+  padding: 20px;
+  background-image: url("../src/images/ic-linkedin.png");
+  background-position: left -5px top -5px;
+  background-repeat: no-repeat;
+}
+
+.style-footer-link {
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.list-style {
+  list-style: none;
+  padding-left: 0;
+}
+
+.btn-sign {
+  text-decoration: none;
+  width: 7rem;
+  height: 3rem;
+  padding: 10px;
+}
+
+.btn-sign:hover {
+  text-decoration: underline;
+}
+
+.link-box {
+  text-decoration: none;
+  width: 120px;
+  height: 117px;
+}
+
+.link-box:hover {
+  text-decoration: underline;
+  box-shadow: 0 0 3px 3px rgba(141, 136, 136, 0.30);
+}
+
+.sizing-link-box {
+  text-decoration: none;
+  background-repeat: no-repeat;
+  background-position: left top;
+  padding: 35px;
+  width: 53px;
+  height: 35px;
+}
+
+.card-microsoft {
+  background-image: url("../src/images/ic-microsoft365.svg");
+}
+
+.card-office  {
+  background-image: url("../src/images/ic-office.png");
+}
+
+.card-windows {
+  background-image: url("../src/images/ic-windows.png");
+}
+
+.card-xbox {
+  background-image: url("../src/images/ic-xbox.png");
+}
+
+.card-surface {
+  background-image: url("../src/images/ic-surfaceDevice.png");
+}
+
+.card-dynamics {
+  background-image: url("../src/images/ic-dynamics365.png");
+}
+
+.card-intune {
+  background-image: url("../src/images/ic-intune.png");
+}
+
+.card-azure {
+  background-image: url("../src/images/ic-azure.png");
+}
+
+.card-server {
+  background-image: url("../src/images/ic-serverProducts.png");
+}
+
+.card-accessories {
+  background-image: url("../src/images/ic-PCAcessories.png");
+}
+
+.card-advertising {
+  background-image: url("../src/images/ic-adveristing.png");
+}
+
+.link-list {
+  text-decoration: none;
+}
+
+.link-list:hover{
+  text-decoration: underline;
+}
+
+.link-option {
+  text-decoration: none;
+}
+
+.link-option:hover {
+  text-decoration: underline;
+}
+
+.btn-info {
+  width: 80px;
+}
+
+#title-input {
+  height: 60px;
+  padding-left: 50px;
+  background-image: url("../src/images/ic-title.png");
+  background-repeat: no-repeat;
+  background-position: center left 5px;
+  background-size: 40px;
+}
+
+#input-message {
+  height: 100px;
+  padding-left: 50px;
+  background-image: url("../src/images/ic-message.png");
+  background-repeat: no-repeat;
+  background-position: top 5px left 5px;
+  background-size: 40px;
+}
+
+.btn-read {
+  background-image: url("../src/images/ic-white-arrow.png");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 25px;
+}
+
+.post-size {
+  width: 45rem;
+}

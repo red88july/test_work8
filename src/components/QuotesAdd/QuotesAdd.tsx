@@ -56,7 +56,7 @@ const QuotesAdd: React.FC = () => {
                     value={quotes.author}
                     type="text"
                     className="form-control"
-                    id="title-input"
+                    id="author-input"
                     placeholder="Example: Obi-Van Kenobi" required/>
             </div>
             <div className="mb-3">
@@ -66,7 +66,7 @@ const QuotesAdd: React.FC = () => {
                     name="quote"
                     onChange={inputChange}
                     className="form-control"
-                    id="input-message"
+                    id="input-quote"
                     placeholder='Example:"You Were My Brother, Anakin. I Loved You."' required/>
             </div>
             <button type="submit" className="btn btn-success">Add quote</button>

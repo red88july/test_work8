@@ -1,7 +1,7 @@
 import React from 'react';
 import QuotesAdd from '../../components/QuotesAdd/QuotesAdd.tsx';
 
-const AddPage:React.FC = () => {
+const AddQuotesPage:React.FC = () => {
   return (
     <div>
       <QuotesAdd />
@@ -9,4 +9,4 @@ const AddPage:React.FC = () => {
   );
 };
 
-export default AddPage;
+export default AddQuotesPage;

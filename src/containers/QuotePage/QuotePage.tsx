@@ -1,7 +1,7 @@
 import React from 'react';
 import Quote from '../../components/Quote/Quote.tsx';
 
-const HomePage:React.FC = () => {
+const QuotePage:React.FC = () => {
   return (
     <div>
       <Quote />
@@ -9,4 +9,4 @@ const HomePage:React.FC = () => {
   );
 };
 
-export default HomePage;
+export default QuotePage;

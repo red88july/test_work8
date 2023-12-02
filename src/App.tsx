@@ -1,7 +1,6 @@
 import Toolbar from './components/Toolbar/Toolbar.tsx';
-import HomePage from './containers/HomePage/HomePage.tsx';
-import AddPage from './containers/AddPage/AddPage.tsx';
-import PostPage from './containers/PostPage/PostPage.tsx';
+import QuotePage from './containers/QuotePage/QuotePage.tsx';
+import AddQuotesPage from './containers/AddQuotesPage/AddQuotesPage.tsx';
 import PageNoFoundPicture from '../src/images/404PageNotFound.jpg';
 import {Route, Routes} from 'react-router-dom';
 
@@ -14,16 +13,13 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={
-            <HomePage />
+            <QuotePage />
           }/>
-          <Route path="/posts" element={
-            <HomePage />
+          <Route path="/quotes" element={
+            <QuotePage />
           }/>
-          <Route path="/posts/:postId" element={
-           <PostPage />
-          }/>
-          <Route path="/add" element={
-            <AddPage />
+          <Route path="/addquotes" element={
+            <AddQuotesPage />
           }/>
           <Route path="*" element={
             <div className="container-fluid pic-container text-center mt-5">

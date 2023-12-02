@@ -1,10 +1,10 @@
 import React from 'react';
-import Home from '../../components/Home/Home.tsx';
+import Quote from '../../components/Quote/Quote.tsx';
 
 const HomePage:React.FC = () => {
   return (
     <div>
-      <Home />
+      <Quote />
     </div>
   );
 };
